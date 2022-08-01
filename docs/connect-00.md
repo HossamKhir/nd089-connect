@@ -28,7 +28,7 @@ _class:
 
 # Congratulations <!-- fit -->
 
-[attendance](https://forms.gle/q21TiS8yP5W6QJyQ8)
+[attendance](https://forms.gle/2QveGzZEFGk1VJrE8)
 
 ---
 
