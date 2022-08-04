@@ -28,7 +28,7 @@ _class:
 
 # Congratulations <!-- fit -->
 
-[attendance](https://forms.gle/2QveGzZEFGk1VJrE8)
+[attendance](./../README.md)
 
 ---
 
