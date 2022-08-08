@@ -18,14 +18,16 @@ def admit_chance(gpa: float) -> str:
     GPA higher than 2.7 -> high
     """
     # TODO turn the rules to code
-    pass
-
+    if gpa <= 1.3: return "low"
+    elif gpa <= 2.7: return "moderate"
+    else: return "high" 
 
 if __name__ == "__main__":
     path = sys.argv[1]
     with open(path) as file:
         grades = json.loads(file.read())
-    key, value = random.choice(list(grades.items()))
+    # key, value = random.choice(list(grades.items()))
+    key, value = list(grades.items())[2]
     grade = get_overall_grade(value)
-    chance = admit_chance(grade)
+    chance = admit_chance(grade[2])
     print(f"{key}'s chances are", chance)

@@ -9,7 +9,7 @@ import random
 import sys
 from typing import Tuple, Union
 
-random.seed(42)
+# random.seed(42)
 
 
 def get_subject_grade(mark: int, score: int) -> Tuple[float, str, float]:
@@ -24,7 +24,15 @@ def get_subject_grade(mark: int, score: int) -> Tuple[float, str, float]:
     out: tuple(float, str, float)
     """
     # TODO implement the functionality
-    return 0.0, "TODO", 0.0
+    # TODO calculate percentile
+    grade = score/mark
+    perc = 100 * grade
+    gpa = 4 * grade
+    # perc = (score/mark) * 100
+    # TODO calculate unweighted
+    # HINT: 0 -> 0 fullmark -> 100%
+    # HINT: 0 -> 0 fullmark -> 4.0
+    return perc, "TODO", gpa
 
 
 def get_student_grade(grades: Union[list, tuple]) -> Tuple[float, str, float]:
@@ -33,13 +41,34 @@ def get_student_grade(grades: Union[list, tuple]) -> Tuple[float, str, float]:
 
     Parameters
     ----------
+    grades: list | tuple
+        a collection of GPAs for a single student
 
     Returns
     -------
     out: tuple(float, str, float)
     """
     # TODO implement the functionality
-    return 0.0, "TODO", 0.0
+    # TODO AVG of GPA
+
+    # List comprehension
+    # [expression (iter_var) for iter_var in collection]
+    # {key:value for key, value in zip()/enumerate()}
+    avg_gpa = 0
+    for grade in grades:
+        avg_gpa += grade # short assignment avg = avg+grade
+        # *= -= /= //= %= <<= &=
+    avg_gpa /= len(grades)
+    # avg = sum(grades)/len(grades)
+    # grades[0] = 0
+    # grades[0] = 0 # breaks if grades is tuple
+    # TODO AVG of percentiles
+    perc = [i * 25 for i in grades]
+    avg_perc = sum(perc)/ len(perc)
+
+    # print(avg_perc, 25 * avg_gpa)
+
+    return avg_perc, "TODO", avg_gpa # tuple
 
 
 def get_overall_grade(grades: dict) -> Tuple[float, str, float]:
@@ -66,5 +95,14 @@ if __name__ == "__main__":
     with open(path) as file:
         grades = json.loads(file.read())
     key, value = random.choice(list(grades.items()))
+    # key, value = list(grades.items())[2]
     overall_grade = get_overall_grade(value)
-    print(key, "\b's overall grade: ", overall_grade)
+    # print(key, "\b's overall grade: ", overall_grade)
+    perc, letter, gpa = overall_grade
+    print("{}'s grades are {:.2f}, {}, {:.2f}".format(
+        key, perc, letter, gpa
+    ))
+    print("{name}'s grades are {perc:.2f}, {letter}, {gpa:.2f}".format(
+        name=key, perc=perc, letter=letter, gpa=gpa
+    ))
+    print(f"{key}'s grades are {perc:.3f}, {letter}, {gpa:.2f}")

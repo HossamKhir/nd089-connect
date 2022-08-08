@@ -59,6 +59,57 @@ _class:
 
 ---
 
+# case sensitivity
+
+```cpp
+#include <iostream>
+using namespace std;
+float PI = 3.14159;
+int main(void){
+  std::cout << pi;
+  return 0;
+}
+
+```
+
+```py
+PI = 3.14159
+
+if __name__ == "__main__":
+  print(PI)
+  # print(pi) # wouldn't work 
+
+```
+
+---
+
+- case sensitive means that letter cases matter
+
+`PI` is different from `pi` is different from `Pi`
+
+---
+
+# spacing
+
+```java
+import java.lang.*;
+import java.util.*;
+
+public class Main {
+  public static void main(String[] args) {
+    System.out.println("Hello, World!");
+  }
+}
+```
+
+```py
+if __name__ == "__main__":
+  print("Hello, World!")
+
+```
+
+---
+
 # Quick review: Data types
 
 - numbers: `int` & `float`

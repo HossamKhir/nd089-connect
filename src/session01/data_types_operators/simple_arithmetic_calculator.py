@@ -9,6 +9,8 @@ import sys
 def main(op1: float | int, op2: float | int, operator: str) -> float | int:
     """the main function for the arithmetic calculator
 
+    PEMDAS
+
     Parameters
     ----------
     op1: int, float
