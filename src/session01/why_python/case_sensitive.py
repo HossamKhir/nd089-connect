@@ -2,8 +2,9 @@
 """
 a simple script to demonstrate the case-sensitive nature of python
 """
+# from math import pi # namespace collision
 
-PI = 3.14159
+PI = 3.14159 # variable (identifier)
 
 
 if __name__ == "__main__":

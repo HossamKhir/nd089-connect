@@ -1,5 +1,8 @@
 #! /usr/bin/env python3
 """Simple calculator for arithmetic operations
+
+PEMDAS
+
 """
 from __future__ import annotations
 

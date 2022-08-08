@@ -24,7 +24,14 @@ def get_subject_grade(mark: int, score: int) -> Tuple[float, str, float]:
     out: tuple(float, str, float)
     """
     # TODO implement the functionality
-    return 0.0, "TODO", 0.0
+    perc = (score/mark) * 100.0
+
+    # 0->0 fullmark -> 100 in percentile
+    # 0->0 fullmark -> 4.0
+    # gpa = (score/mark) * 4.0
+    gpa = (perc/100) * 4
+
+    return perc, "TODO", gpa
 
 
 def get_student_grade(grades: Union[list, tuple]) -> Tuple[float, str, float]:
@@ -39,7 +46,12 @@ def get_student_grade(grades: Union[list, tuple]) -> Tuple[float, str, float]:
     out: tuple(float, str, float)
     """
     # TODO implement the functionality
-    return 0.0, "TODO", 0.0
+    # percentile or gpa, calculate an average
+    avg_gpa = sum(grades)/len(grades) # answered by Khalid & Sai
+    avg_perc = avg_gpa * 4 / 100
+    
+
+    return avg_perc, "TODO", avg_gpa
 
 
 def get_overall_grade(grades: dict) -> Tuple[float, str, float]:
@@ -67,4 +79,8 @@ if __name__ == "__main__":
         grades = json.loads(file.read())
     key, value = random.choice(list(grades.items()))
     overall_grade = get_overall_grade(value)
-    print(key, "\b's overall grade: ", overall_grade)
+    # print(key, "\b's overall grade: ", overall_grade)
+    perc, letter, gpa = overall_grade
+    print("{key}'s overall grade: {perc:.2f}, {letter}, {gpa:.1f}".format(
+        key=key, perc=perc, letter=letter, gpa=gpa
+    ))

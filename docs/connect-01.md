@@ -59,6 +59,45 @@ _class:
 
 ---
 
+# case sensitive
+
+means that a variable (or a literal) should always be consistent in terms of letter casing
+
+`PI` is different from `pi` is different from `Pi`
+
+---
+
+# Spacing
+
+```java
+import java.lang.*;
+import java.util.*;
+
+class Main {
+  public static void main(String[] args){
+
+  }
+}
+```
+
+```py
+
+def main(args):
+  pass
+
+```
+---
+
+<!--
+_class:
+  - gaia
+  - lead
+-->
+
+# tabs are bad (for python) <!-- fit -->
+
+---
+
 # Quick review: Data types
 
 - numbers: `int` & `float`
@@ -88,10 +127,32 @@ _class:
 
 ---
 
+# Quick practice
+
+## club 19052
+
+have high GPA
+
+---
+
 <!--
 _class:
   - gaia
   - lead
 -->
 
-# Quick practice <!-- fit -->
+# Q&A _(encore)_ <!-- fit -->
+
+---
+
+<!--
+_class:
+  - gaia
+  - lead
+ -->
+
+# Thank You
+
+## Good Luck
+
+## Have Fun
