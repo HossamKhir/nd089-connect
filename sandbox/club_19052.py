@@ -5,7 +5,7 @@ import json
 import random
 import sys
 
-from .score_calculator import get_overall_grade
+from score_calculator import get_overall_grade
 
 random.seed(42)
 
@@ -18,9 +18,10 @@ def admit_chance(gpa: float) -> str:
     GPA higher than 2.7 -> high
     """
     # TODO turn the rules to code
-    if gpa <= 1.3: return "low"
+    if gpa <= 1.3: return "low" # python can allow that syntax, but it is bad practice
     elif gpa <= 2.7: return "moderate"
-    else: return "high" 
+    else: return "high"
+
 
 if __name__ == "__main__":
     path = sys.argv[1]
