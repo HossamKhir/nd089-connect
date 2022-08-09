@@ -139,10 +139,32 @@ if __name__ == "__main__":
 
 ---
 
+# Quick practice
+
+## club 19052
+
+have high GPA
+
+---
+
 <!--
 _class:
   - gaia
   - lead
 -->
 
-# Quick practice <!-- fit -->
+# Q&A _(encore)_ <!-- fit -->
+
+---
+
+<!--
+_class:
+  - gaia
+  - lead
+ -->
+
+# Thank You
+
+## Good Luck
+
+## Have Fun
