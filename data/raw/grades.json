@@ -1,0 +1,58 @@
+{
+  "Yank": {
+    "history": {
+      "mark": 40,
+      "score": 6
+    },
+    "physics": {
+      "mark": 60,
+      "score": 5
+    },
+    "math": {
+      "mark": 32,
+      "score": 6
+    }
+  },
+  "Ivan": {
+    "history": {
+      "mark": 40,
+      "score": 20
+    },
+    "physics": {
+      "mark": 60,
+      "score": 30
+    },
+    "math": {
+      "mark": 32,
+      "score": 16
+    }
+  },
+  "Sarah": {
+    "history": {
+      "mark": 40,
+      "score": 36
+    },
+    "physics": {
+      "mark": 60,
+      "score": 50
+    },
+    "math": {
+      "mark": 32,
+      "score": 16
+    }
+  },
+  "Mulan": {
+    "history": {
+      "mark": 40,
+      "score": 39
+    },
+    "physics": {
+      "mark": 60,
+      "score": 49
+    },
+    "math": {
+      "mark": 32,
+      "score": 31
+    }
+  }
+}
