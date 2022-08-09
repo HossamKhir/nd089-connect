@@ -17,7 +17,7 @@ _class:
 
 ## Session 1
 
-[attendance](https://forms.gle/RWFFCBjLN7Ebszfq5)
+[attendance](../README.md)
 
 ---
 
@@ -59,54 +59,48 @@ _class:
 
 ---
 
-# case sensitivity
+# case sensitive
 
-```cpp
-#include <iostream>
-using namespace std;
-float PI = 3.14159;
-int main(void){
-  std::cout << pi;
-  return 0;
-}
-
-```
-
-```py
-PI = 3.14159
-
-if __name__ == "__main__":
-  print(PI)
-  # print(pi) # wouldn't work 
-
-```
-
----
-
-- case sensitive means that letter cases matter
+means that a variable (or a literal) should always be consistent in terms of letter casing
 
 `PI` is different from `pi` is different from `Pi`
 
+```py
+PI = 3.14159
+if __name__ == "__main__":
+  print(PI)
+  # print(pi) # wouldn't work
+```
+
 ---
 
-# spacing
+# Spacing
 
 ```java
 import java.lang.*;
 import java.util.*;
-
-public class Main {
-  public static void main(String[] args) {
+public class Main { // <- start scope/block of *Main* class
+  public static void main(String[] args) { // <- start scope/block of *main* method
     System.out.println("Hello, World!");
-  }
-}
+  } // <- end scope/block of *main* method
+} // <- end scope/block of *Main* class
 ```
 
 ```py
-if __name__ == "__main__":
-  print("Hello, World!")
-
+if __name__ == "__main__": # notice no braces i.e {}
+    print("Hello, World!")
+#^^^ instead, we have 4 spaces at the beginning
 ```
+
+---
+
+<!--
+_class:
+  - gaia
+  - lead
+-->
+
+# Pythonists avoid tabs <!-- fit -->
 
 ---
 
@@ -142,8 +136,6 @@ if __name__ == "__main__":
 # Quick practice
 
 ## club 19052
-
-have high GPA
 
 ---
 
