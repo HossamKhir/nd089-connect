@@ -17,6 +17,9 @@ if __name__ == "__main__":
     _ = parser.add_argument("end", action="store", type=int, help="the ending index")
     args = parser.parse_args()
 
+    start = args.start
+    end = args.end
+
     # TODO implement sieve of eratosthenes
 
     # NOTE regardless of the start index sent, the sieve always starts at 2
