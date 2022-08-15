@@ -19,6 +19,7 @@ def overwrite_global():
 
 def edit_global():
     """ """
+    global glob
     glob += ", and I am proud"
 
 

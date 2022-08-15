@@ -15,4 +15,4 @@ if __name__ == "__main__":
     double = [2 * i for i in test_list]
     squares = [i ** 2 for i in test_list]
     for el, dbl, sq in zip(test_list, double, squares):
-        print(f"2x{el} is {dbl}\t2^{el} is {sq}")
+        print(f"2x{el} is {dbl}\t{el}^2 is {sq}")
