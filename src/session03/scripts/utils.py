@@ -23,5 +23,5 @@ def get_subject_overall_performance(grades: dict, subject: str) -> float:
     for marks in grades.values():
         # TODO: an exception could occur here
         performance += marks[subject]["score"]
-    full_mark = grades.values()[0][subject]["mark"]
+    full_mark = list(grades.values())[0][subject]["mark"]
     return performance / (full_mark * len(grades))
