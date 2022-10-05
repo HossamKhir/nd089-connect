@@ -3,6 +3,7 @@ marp: true
 theme: gaia
 class: gaia
 color: black
+math: katex
 ---
 
 <!--
@@ -56,10 +57,19 @@ _class:
 
 # Vectors
 
-1. if $\overrightarrow{w} = (-25, 10)$, then what is $\frac{1}{5}\overrightarrow{w}$?
-2. if $\overrightarrow{v}$ has **magnitude** of 3 units, and makes an angle of $160\degree$ w/ +ve $x$-axis, then
-   1. $\left\lVert5\overrightarrow{v}\right\rVert=?$ units
-   2. $5\overrightarrow{v}$ makes an angle of $?\degree$ w/ +ve $x$-axis
+1. if $\vec{w} = \begin{bmatrix}-25\\10\end{bmatrix}$, then what is $\frac{1}{5}\vec{w}$?
+2. if $\vec{v}$ has **magnitude** of 3 units, and makes an angle of $160\degree$ w/ +ve $x$-axis, then
+   1. $\left\lVert5\vec{v}\right\rVert=?$ units
+   2. $5\vec{v}$ makes an angle of $?\degree$ w/ +ve $x$-axis
+
+---
+
+# Vectors, solution
+
+1. $\frac{1}{5}\vec{w}=\begin{bmatrix}-5 \\ 2\end{bmatrix}$
+1. for $\vec{v}$
+   1. $\left\lVert5\vec{v}\right\rVert=15$ units
+   2. $5\vec{v}$ makes an angle of $160\degree$ w/ +ve $x$-axis.
 
 ---
 
@@ -67,7 +77,9 @@ _class:
 
 ![bg right:50%](../data/vectors-001.png)
 
-$\overrightarrow{v}$ starts at origin and ends at $E$, if $\frac{1}{5}\overrightarrow{v}$ starts at origin, where it ends?
+$\vec{v}$ starts at origin and ends at $E$, if $\frac{1}{5}\vec{v}$ starts at origin, where it ends?
+
+- **answer**: at $D$.
 
 ---
 
@@ -75,8 +87,8 @@ $\overrightarrow{v}$ starts at origin and ends at $E$, if $\frac{1}{5}\overright
 
 [Graph](https://www.geogebra.org/calculator/ynwjkqbg)
 
-1. if $\overrightarrow{v}=\begin{bmatrix}-5 & -4\end{bmatrix}$, then unit vector in its direction is ____
-2. $\overrightarrow{v}=\begin{bmatrix}2 & 7\end{bmatrix}$, find unit vector in its direction.
+1. if $\vec{v}=\begin{bmatrix}-5 \\ -4\end{bmatrix}$, then unit vector in its direction is $\begin{bmatrix}\frac{-5}{\sqrt{41}} \\ \frac{-4}{\sqrt{41}}\end{bmatrix}$
+2. $\vec{v}=\begin{bmatrix}2 \\ 7\end{bmatrix}$, find unit vector in its direction. $\begin{bmatrix}\frac{2}{\sqrt{53}}\\\frac{7}{\sqrt{53}}\end{bmatrix}$
 
 ---
 
