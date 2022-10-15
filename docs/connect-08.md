@@ -75,7 +75,7 @@ _class:
 
 # Vectors, cont. 1
 
-![bg right:50%](../data/vectors-001.png)
+![bg right:50%](../data/img/vectors-001.png)
 
 $\vec{v}$ starts at origin and ends at $E$, if $\frac{1}{5}\vec{v}$ starts at origin, where it ends?
 

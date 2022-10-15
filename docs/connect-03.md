@@ -119,11 +119,11 @@ if __name__ == "__main__":
 
 # From classroom
 
-![bg width:90%](../data/cls-diag-1.png)
+![bg width:90%](../data/img/cls-diag-1.png)
 
 ---
 
-![bg height:48em](../data/big-1.png)
+![bg height:48em](../data/img/big-1.png)
 
 ---
 
