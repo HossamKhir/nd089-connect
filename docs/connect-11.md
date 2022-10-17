@@ -224,7 +224,7 @@ and we can graph it on the axis to visualise it, but let's try to visualise the 
 ---
 
 now let's leverage the general equation, say we have,
-$y_1=m_{11}x_1+m_{12}x_2+c_1$ **&** $y_2=m{21}x_1+m{22}x_2+c_2$
+$y_1=m_{11}x_1+m_{12}x_2+c_1$ **&** $y_2=m_{21}x_1+m_{22}x_2+c_2$
 those become: $y=MX+c$ once again, so let's visualise those.
 
 ---
